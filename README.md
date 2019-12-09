@@ -1,11 +1,6 @@
-## My Project
+## How to use Multiple load balancer Target Group Support for Amazon ECS to access internal and external service endpoint using the same DNS name
 
-TODO: Fill this README out!
-
-Be sure to:
-
-* Change the title in this README
-* Edit your repository description on GitHub
+This repository contains supporting file for the blog https://aws-blogs-prod.amazon.com/containers/?p=623&preview=true . This blog walks through the steps for using Amazon ECS feature of multiple target groups support.
 
 ## License
 
