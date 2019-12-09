@@ -1,0 +1,28 @@
+{
+	"serviceName": "fargate-service",
+	"taskDefinition": "sample-fargate:1",
+	"launchType": "FARGATE",
+	"networkConfiguration": {
+		"awsvpcConfiguration": {
+			"subnets": [
+				"subnet-0080a41458f06e427",
+				"subnet-0bf169aed3cae352b"
+			],
+			"securityGroups": [
+				"sg-0ec02727d55db7e1d"
+			]
+		}},
+
+		"loadBalancers": [{
+				"targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:123456781234:targetgroup/my-public-targets-ip/346bf000f7740a79",
+				"containerName": "fargate-app",
+				"containerPort": 80
+			},
+			{
+				"targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:123456781234:targetgroup/my-private-targets-ip/0bd8ac40c4cc88b0",
+				"containerName": "fargate-app",
+				"containerPort": 80
+			}
+		],
+		"desiredCount": 2
+}

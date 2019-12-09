@@ -1,0 +1,17 @@
+{
+  "Changes": [
+    {
+      "Action": "CREATE",
+      "ResourceRecordSet": {
+        "Name": "ecs-mtg-demo1.awsdemodesign.com",
+        "Type": "CNAME",
+        "TTL": 3600,
+        "ResourceRecords": [
+          {
+            "Value": "internal-my-private-load-balancer-1367652196.us-east-1.elb.amazonaws.com"
+          }
+        ]
+      }
+    }
+  ]
+}
